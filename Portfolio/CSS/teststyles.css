@@ -1,0 +1,13 @@
+body {
+  background-color: lightblue;
+}
+h1, footer {
+    background-color: darkgreen;
+    color: white;
+}
+.border {
+  border: thick solid blue;
+}
+#past-exp {
+    border: thick dashed orange;
+}

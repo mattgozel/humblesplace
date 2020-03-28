@@ -3,35 +3,69 @@
 <!--
 Name: Matt Gozel
 Date Created: 03/20/2020
-Most recent revision:3/24/2020
+Most recent revision:3/26/2020
 -->
 <head>
-  <header><title>Matt Gozel's Portfolio</title></header>
+  <title>Matt Gozel's Portfolio</title>
+  <link href="teststyles.css" rel="stylesheet" type="text/css" />
+  <style>
+  caption {
+   font-weight: bold;
+   font-size: 1.2em;
+   margin-bottom: 8px;
+}
+table, th, td {
+    border: 1px solid #0d1f2d;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+table {
+    width: 90%;
+    margin: auto;
+}
+tr {
+    height: 30px;
+}
+th {
+    background-color: #546a7b;
+    color: #f2eded;
+}
+tr:nth-child(odd) {
+    background-color: #e4c3ad;
+}
+  </style>
 </head>
-<body>
+<header>
   <h1>Portfolio for Matt Gozel</h1>
-<hr />
-<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
+</header>
+<body>
+<nav>
 <p><a href="index.html">Home</a></p>
 <p><a href="projects.html">Projects</a></p>
 <p><a href="contact.html">Contact</a></p>
 <p><a href="testimonials.html">Testimonials</a></p>
-<hr />
-<nav></nav>
+<div class="clear-float"></div>
+</nav>
 <section>
-<article id="about-me"><h2><em>About Me</em></h2>
-  <img src="Pics/aboutme.jpg" alt="Matt Gozel giving a speech at Capella University" style="width: 300px;"/>
+<article class="border" id="about-me"><h2><em>About Me</em></h2>
+  <img src="Pics/aboutme.jpg" alt="Matt Gozel giving a speech at Capella University" width="300px"/>
 <p>I am a <strong>junior developer</strong> with experience in the <strong>education</strong>, <strong>health care</strong> and <strong>non-profit</strong> industries.</p>
-<p>When not working, I spend time with my wife, 2 kids, dog and 4 chickens</p></article>
+<p>When not working, I spend time with my wife, 2 kids, dog and 4 chickens</p>
+<div class="clear-float"></div>
+</article>
 <article id="past-exp"><h2><em>Past Experiences</em></h2>
-  <img src="Pics/pastexp.jpg" alt="Humble Bee Records logo" style="width: 300px;"/>
-<table border="1">
+  <img src="Pics/pastexp.jpg" alt="Humble Bee Records logo" width="300px"/>
+  <div class="right-content">
+<table>
 <caption>Employment History</caption>
+<thead>
 <tr>
   <th>Dates of Employment</th>
   <th>Title</th>
   <th>Company</th>
 </tr>
+</thead>
+<tbody>
 <tr>
   <td>Agust 2019 - Present</td>
   <td>Medicare and Retirement Portfolio Analyst</td>
@@ -47,10 +81,14 @@ Most recent revision:3/24/2020
   <td>Loaned Executive</td>
   <td>Greater Twin Cities United Way</td>
 </tr>
+</tbody>
 </table>
+</div>
+<div class="clear-float"></div>
 </article>
 <article id="hobbies"><h2><em>Hobbies</em></h2>
   <img src="Pics/hobbies.jpg" alt="Statue of FDR" style="width: 300px;"/>
+  <div class="right-content">
   <ul>
     <li>Favorite Fiction Authors</li>
       <ol>
@@ -78,9 +116,11 @@ Most recent revision:3/24/2020
                 <li>Chess</li>
                 <li>Chasing Around Kids</li>
               </ul></ul>
+            </div>
+              <div class="clear-float"></div>
+            </article>
 </section>
 <footer>
-  <hr />
 <p>&copy; 2020 Matt Gozel. All rights reserved.</p>
 </footer>
 </body>

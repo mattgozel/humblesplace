@@ -7,25 +7,19 @@
 <html lang="en">
     <head>
         <title>Contact</title>
+        <link href="teststyles.css" rel="stylesheet" type="text/css" />
     </head>
-
     <body>
         <header>
             <h1>Contact Info</h1>
         </header>
-<hr />
+<nav>
 <p><a href="index.html">Home</a></p>
 <p><a href="projects.html">Projects</a></p>
 <p><a href="contact.html">Contact</a></p>
 <p><a href="testimonials.html">Testimonials</a></p>
-
-        <nav>
-
-        </nav>
-
-
-        <footer>
-<hr />
+<div class="clear-float"></div>
+</nav>
 <h2>Information Request</h2>
 <form action="submit.html" method="POST">
   <label for="firstName">First Name:</label> <br />
@@ -46,7 +40,7 @@
 <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
 <label for="frontEnd">Front End Web Development</label><br />
 <input type="checkbox" id="backEnd" name="interest" value="backEnd">
-<label for="backEnd">Back End Web Development</label>
+<label for="backEnd">Back End Web Development</label><br />
 <input type="checkbox" id="database" name="interest" value="database">
 <label for="database">Database Design</label><br />
 </fieldset>
@@ -60,8 +54,7 @@
 <label for="info">Additional Information</label><br />
 <textarea name="Info"></textarea><br />
   <input type="submit" name="submit" value="Submit">
-  <hr />
-
+<footer>
 <p>&copy; 2020 Matt Gozel. All rights reserved.</p>
         </footer>
     </body>
