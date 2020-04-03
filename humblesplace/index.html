@@ -1,47 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-Name: Matt Gozel
-Date Created: 03/24/2020
-Most recent revision:3/24/2020
--->
-<head>
-  <title>Humble's Place</title>
-    <link href="humbles.css" rel="stylesheet" type="text/css" />
-    <style>
-    body {
-        background-color: #fef9ff;
-        font-family: arial, helvetica, sans-serif;
-        color: #0d1f2d;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    img {
-      margin-bottom: 12px;
-      margin-top: 12px;
-    }
-    .clear-float {
-        clear:both;
-    }
-    </style>
-</head>
-<body>
-  <header><h1>Humble's Place</h1></header>
-<nav>
-<p><a href="index.html">Home</a></p>
-<p><a href="menu.html">Menu</a></p>
-<p><a href="contact.html">Contact</a></p>
-<div class="clear-float"></div>
-</nav>
-<img src="pics/humblesplace.jpg" alt="Humble's Place Logo" style="float:left;"/>
-<h2>At Humble's Place, we don't forgive the bad shit that you do. We never cared in the first place.</h2>
-<p>You've got bills. An ex-wife. A couple kids you don't see enough. An overwhelming sense of existential dread.</p>
-<p>But not tonight. Tonight you've got whiskey. And I guess we also serve food or whatever.</p>
-<div style="clear:both"></div>
-<footer>
-<p>3750 Tyler St NE</p>
-<p>Minneapolis, MN 55418</p>
-<p>612-221-5296</p>
-</footer>
-</body>
+	<head>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Humble's Place</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+nav {
+    border-top: thin #5b7d87 solid;
+    border-bottom: thin #5b7d87 solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+		margin-bottom: 12px;
+}
+nav .btn {
+    background-color: #5b7d87;
+    color: #fef9ff;
+}
+nav .btn:hover {
+	background-color: #fef9ff;
+	color: #5b7d87;
+	font-weight: bolder;
+}
+body {
+		background-color: #fef9ff;
+		font-family: arial, helvetica, sans-serif;
+		color: #0d1f2d;
+		max-width: 1200px;
+		margin: 0 auto;
+}
+.carousel-inner {
+	background-color: #5b7d87;
+	height: 300px;
+}
+.carousel-item {
+	position: absolute;
+	font-size: 50px;
+	color: #fef9ff;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+}
+</style>
+	<body>
+		<header class="jumbotron">
+    <h1>Humble's Place</h1>
+    <h3 class="text-right mt-5">New location opening soon!</h3>
+</header>
+		<div class="container">
+			<nav>
+				<a class="btn badge-pill" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+				<a class="btn badge-pill" href="menu.html">Menu</a>
+				<a class="btn badge-pill" href="contact.html">Contact</a>
+			</nav>
+			<noscript>
+			  <h1>THIS WEBSITE REQUIRES JAVASCRIPT TO BE ENABLED TO FUNCTION PROPERLY</h1>
+			  <h1>IF YOU ARE SEEING THIS MESSAGE, PLEASE ENABLE JAVASCRIPT TO ENABLE WEBSITE FUNCTIONALITY</h1>
+			</noscript>  
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="..." alt="New location coming soon!">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="..." alt="Seasonal Spring menu in bloom!">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="..." alt="Drink of the month - SG Special Brew">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-4">
+<img src="pics/humblesplace.jpg" alt="Humble's Place Logo" class="img-fluid" />
+	 </div>
+	 <div class="col-lg-9 col-md-8">
+		 <h2>At Humble's Place, we don't forgive the bad shit that you do. We never cared in the first place.</h2>
+		 <p>You've got bills. An ex-wife. A couple kids you don't see enough. An overwhelming sense of existential dread.</p>
+		 <p>But not tonight. Tonight you've got whiskey. And I guess we also serve food or whatever.</p>
+	</div>
+</div>
+       </div>
+			 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+			 <footer class="jumbotron">
+			 <p>3750 Tyler St NE</p>
+			 <p>Minneapolis, MN 55418</p>
+			 <p>612-221-5296</p>
+			 </footer>
+	</body>
 </html>
